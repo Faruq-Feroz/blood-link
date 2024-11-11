@@ -1,0 +1,714 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+/* Navbar Styles */
+.navbar {
+    background-color: #C8102E; 
+    padding: 0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    white-space: nowrap; 
+   
+}
+
+.navbar-brand img {
+    display: block; 
+    max-height: 190px;
+    margin: 0; 
+    padding: 0;
+    padding-left: 30px;
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #FFFFFF; 
+}
+
+.nav-link {
+    color: #55035d !important;
+    margin: 0 1rem; /* Spacing between links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.nav-link:hover{
+    color: red !important;
+}
+
+
+.nav-link:hover {
+    color: #F5C3C2; /* Light red color on hover */
+}
+
+.language-dropdown{
+   border: 2px solid purple;
+}
+.language-dropdown:hover{
+    background-color: rgb(190, 6, 190);
+    color: white;
+    transition: ease-in-out 0.1s;
+}
+.navbar-toggler {
+    border: none; /* Remove border for a cleaner look */
+}
+
+.navbar-toggler-icon {
+    background-color: #FFFFFF; /* White color for the toggler icon */
+}
+
+
+  /* Hero.css */
+
+/* Hero.css */
+.hero-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    
+  }
+  
+  .hero-left h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #55035d;
+    margin-bottom: 1rem;
+    margin-left: 25px;
+  }
+  
+  .hero-left h3 {
+    font-size: 2.1rem;
+    color: #fc0a0a !important;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-left: px;
+    
+  }
+  
+  .donate-button {
+    
+    padding: 15px 50px !important;
+    font-size: 1rem !important;
+    color: #fff !important;
+    background-color: #55035d !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+    margin: 20px !important;
+  }
+  
+  .donate-button:hover {
+    background-color: #a00 !important;
+  }
+  
+  .hero-image {
+    max-width: 100%; /* Ensure image never overflows */
+    max-height: 400px; /* Limit image height */
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-radius: 8px;
+  }
+
+
+  .container {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    gap: 20px; /* Space between columns */
+}
+
+.form-section,
+.appointment-history {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: purple !important; /* Dark text for headings */
+    font-weight: 500;
+}
+
+.form-section input[type="text"],
+.form-section input[type="number"],
+.form-section input[type="date"],
+.form-section input[type="submit"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    margin: 10px 0; /* Margin for spacing */
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.form-section input[type="submit"] {
+    width: 200px;
+    background-color: rgb(203, 8, 8); /* Button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+    display: block; /* Ensure it's a block element */
+    margin: 0 auto; /* Center the button */
+}
+
+
+.form-section input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#history-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between borders */
+}
+
+#history-table th,
+#history-table td {
+    padding: 8px; /* Padding inside table cells */
+    border-bottom: 1px solid #ddd; /* Bottom border for cells */
+}
+
+
+#history-table th {
+    background-color: #f2f2f2; /* Light grey background for header */
+    text-align: left; /* Left align text */
+    padding: 20px; /* Padding for header */
+    font-size: 16px; /* Font size for header */
+}
+
+#history-table td {
+    text-align: center; /* Center align text in table data */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red button for delete */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for delete button */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.alert {
+    background-color: #05fa3e !important; /* Light green for alert */
+    color: #f9fbfa; /* Dark green for text */
+    padding: 10px; /* Padding for alert */
+    margin-bottom: 10px; /* Space below alert */
+    border-radius: 5px; /* Rounded corners for alert */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns on smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .form-section,
+    .appointment-history {
+        flex: none;
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Space between stacked sections */
+    }
+
+    h2, h3 {
+        font-size: 1.5em; /* Adjust font size for headings */
+    }
+
+    #history-table {
+        display: table;
+        width: 100%; /* Full width for table */
+    }
+
+    #history-table th,
+    #history-table td {
+        font-size: 14px; /* Adjust font size for table data */
+        padding: 5px; /* Reduce padding for smaller screens */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+}
+.appointment-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 500px; /* Set a max-width for the form */
+    width: 100%; /* Make it responsive */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.appointment-history {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.history-table {
+    display: flex;
+    flex-direction: column; /* Stack items vertically for mobile */
+}
+
+.history-row {
+    display: flex; 
+    flex-wrap: wrap; /* Allow wrapping for headers and data */
+    justify-content: space-between; /* Space out items */
+    margin-bottom: 15px; /* Space between each appointment */
+}
+
+.history-cell {
+    padding: 10px;
+    flex: 1 1 45%; /* Allow cells to grow and shrink */
+    border-bottom: 1px solid #ddd; /* Divider between rows */
+}
+
+.header-cell {
+    background-color: #f2f2f2; /* Different background for headers */
+    font-weight: bold; /* Bold for header text */
+}
+
+.delete-cell {
+    flex: 1 1 100%; /* Make delete button take full width */
+    margin-top: 10px; /* Space above the delete button */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red background for delete button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+
+//search component
+
+.blood-search-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 2);
+    padding: 20px;
+    
+}
+
+.blood-search-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.search-input-container {
+    display: flex;
+    width: 100%;
+    max-width: 600px; /* Limit width for better UI */
+    gap: 10px; /* Space between input and button */
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #410254; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #56023d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex; /* Use flex to align icon and text */
+    align-items: center; /* Center items vertically */
+    gap: 5px; /* Space between icon and text */
+}
+
+.search-button:hover {
+    background-color: #45a049; /* Darken button on hover */
+}
+
+.search-results {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.donor-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.donor-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.donor-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+  
+
+/* Main container styling */
+.urgent-blood-needed-container {
+    padding: 20px;
+    margin-top: 120px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #55035d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: rgb(193, 6, 6);
+}
+
+/* Flex container for two-column layout */
+.content-container {
+    display: flex;
+    flex-direction: column; /* Stack in single column on small screens */
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .content-container {
+        flex-direction: row; /* Side-by-side columns on larger screens */
+    }
+}
+
+/* Left column - Add Request Form */
+.add-request-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.add-request-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-request-form button {
+    width: 180px;
+    padding: 10px;
+    background-color: rgb(211, 6, 6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.add-request-form button:hover {
+    background-color: #45a049;
+}
+
+/* Right column - Urgent Requests Data */
+.urgent-requests {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 400px; /* Optional: limit height and enable scroll */
+    overflow-y: auto;
+}
+
+.urgent-request {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.urgent-request h3 {
+    margin: 0;
+}
+
+.urgent-request button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.urgent-request button:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+//health
+.health-safety-info {
+    padding: 20px;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.card-content {
+    font-size: 1rem; /* Smaller font size */
+    color: #666; /* Softer color for better readability */
+    line-height: 1.6; /* Add line height for spacing */
+    margin-bottom: 10px; /* Space below the content */
+    font-style: italic; /* Optional: gives it a more sophisticated look */
+}
+
+.additional-info {
+    font-size: 1rem; /* Even smaller for additional info */
+    color: #888; /* Slightly lighter color */
+    line-height: 1.5;
+    margin-top: 10px;
+    font-style: normal;
+}
+
+
+.info-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-card h3 {
+    color: #C8102E;
+    margin-bottom: 10px;
+}
+
+.additional-info {
+    margin-top: 10px;
+    color: #555;
+}
+
+.read-more-button {
+    background-color: #55035d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 60%;
+    margin: 0 auto; /* Center the button horizontally */
+    margin-top: auto;
+}
+
+
+.read-more-button:hover {
+    background-color: #45a049;
+}
+
+
+  
+  
+
+  .testimonials-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center; /* Center the text */
+    margin-top: 100px;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .donors{
+    padding-bottom: 40px;
+    font-size: 2.5rem !important;
+    font-weight: 700px !important;
+  }
+  
+  .testimonial-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-card img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  .role {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .rating {
+    color: gold; /* Adjust as needed for styling */
+    font-size: 30px;
+  }
+
+  @media (max-width:767px){
+    .hero-image {
+        max-width: 100%; /* Ensure image never overflows */
+        max-height: 300px; /* Limit image height */
+        width: auto;
+        height: auto;
+        object-fit: cover; /* Ensures the image scales nicely */
+        border-radius: 8px;
+      }
+      .hero-left h1 {
+        font-size: 1.9rem;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #55035d;
+margin-top: 20px;
+        
+      }
+      .hero-left h3 {
+        font-size: 1.4rem;
+        color: #fc0a0a;
+        font-weight: 600;
+        margin-bottom: 2rem;
+       
+        
+      }
+      .section-headings{
+        font-size: 30px !important;
+        
+    }
+    .donors{
+        font-size: 2rem !important;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    .blood-search-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .search-input-container {
+        flex-direction: column; /* Stack input and button on small screens */
+        align-items: stretch; /* Ensure full width */
+    }
+
+    .search-input {
+        margin-bottom: 10px; /* Space between input and button */
+    }
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .history-row {
+        flex-direction: column; /* Stack header and data on mobile */
+        align-items: flex-start; /* Align to start */
+    }
+
+    .history-cell {
+        flex: none; /* Override flex-grow */
+        width: 100%; /* Full width for mobile */
+        padding: 5px 0; /* Adjust padding for mobile */
+    }
+
+    .delete-cell {
+        margin-top: 15px; /* Space for delete button on mobile */
+    }
+}
+
+  
+  
+  
+  /* Optional: Add some media query for better responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .nav-link {
+      margin: 0 0.5rem; /* Less spacing on smaller screens */
+    }
+    
+  }
+
+
+ 
+
+
+
+
+

@@ -1,0 +1,54 @@
+.contactFormWrapper {
+    width: 100%; /* Full width of the viewport */
+    max-width: 800px; /* Set a max-width for larger screens */
+    margin: 40px auto; /* Center the form */
+    padding: 30px; /* Padding around the form */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #eaeaea; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+
+.contactFormHeader {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below heading */
+    color: #C8102E; /* Brand color */
+}
+
+.formGroup {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+.formControl {
+    width: 100%; /* Full width for inputs */
+    border-radius: 8px; /* Rounded corners for inputs */
+    border: 1px solid #ced4da; /* Light grey border */
+    padding: 12px; /* Inner padding */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.formControl:focus {
+    border-color: #C8102E; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(200, 16, 46, 0.5); /* Light shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submitButton {
+    width: 200px; /* Set a specific width for the button */
+    padding: 12px; /* Comfortable padding */
+    background-color: #C8102E; /* Brand color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+    display: block; /* Make the button a block element */
+    margin: 20px auto; /* Center the button horizontally */
+}
+
+
+.submitButton:hover {
+    background-color: #A20F24; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
